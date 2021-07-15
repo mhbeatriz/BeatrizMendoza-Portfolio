@@ -1,0 +1,28 @@
+.header {
+  //   border: red 2px solid;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //   border: red 2px solid;
+  margin: 10px;
+}
+.home {
+  text-decoration: none;
+  color: #454545;
+}
+.nav a:visited,
+.nav a:link,
+.nav a:active {
+  color: #454545;
+  text-decoration: none;
+  margin: 5px;
+}

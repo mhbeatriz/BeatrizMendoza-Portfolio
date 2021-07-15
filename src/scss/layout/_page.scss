@@ -1,0 +1,57 @@
+.section1 {
+  width: 100vw;
+  height: 300px;
+  //   border: blue 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1-title {
+  font-size: 32px;
+  //   border: red 2px solid;
+  margin-bottom: 5px;
+}
+.section1-subtitle {
+  //   border: red 2px solid;
+  font-size: 16px;
+}
+
+.section2 {
+  width: 100vw;
+  height: 500px;
+  background-color: #87b2b2;
+  //   border: red 2px solid;
+  display: flex;
+}
+
+.guitar1 {
+  width: 100vw;
+  height: 250px;
+  transform: translate(0, -50%);
+  //   border: red 2px solid;
+}
+.guitar2 {
+  width: 100vw;
+  height: 300px;
+  transform: translate(0, -35%);
+}
+.aboutme {
+  //   border: red 2px solid;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.profile {
+  width: 150px;
+  height: 150px;
+}
+
+.description {
+  //   border: red 2px solid;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}

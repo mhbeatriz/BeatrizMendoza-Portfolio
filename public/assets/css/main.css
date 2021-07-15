@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.section1 {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section1-title {
+  font-size: 32px;
+  margin-bottom: 5px; }
+
+.section1-subtitle {
+  font-size: 16px; }
+
+.section2 {
+  width: 100vw;
+  height: 500px;
+  background-color: #87b2b2;
+  display: flex; }
+
+.guitar1 {
+  width: 100vw;
+  height: 250px;
+  transform: translate(0, -50%); }
+
+.guitar2 {
+  width: 100vw;
+  height: 300px;
+  transform: translate(0, -35%); }
+
+.aboutme {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center; }
+
+.profile {
+  width: 150px;
+  height: 150px; }
+
+.description {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px; }
+
+.header {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+
+.home {
+  text-decoration: none;
+  color: #454545; }
+
+.nav a:visited,
+.nav a:link,
+.nav a:active {
+  color: #454545;
+  text-decoration: none;
+  margin: 5px; }
+
+/*# sourceMappingURL=main.css.map */
