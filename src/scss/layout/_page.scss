@@ -20,25 +20,28 @@
 
 .section2 {
   width: 100vw;
-  height: 500px;
+  height: 100vh;
+  // height: 500px;
   background-color: #87b2b2;
   //   border: red 2px solid;
   display: flex;
+  flex-direction: column;
 }
 
 .guitar1 {
   width: 100vw;
   height: 250px;
   transform: translate(0, -50%);
-  //   border: red 2px solid;
+
+  // border: red 2px solid;
 }
-.guitar2 {
-  width: 100vw;
-  height: 300px;
-  transform: translate(0, -35%);
-}
+// .guitar2 {
+//   width: 100vw;
+//   height: 300px;
+//   transform: translate(0, -35%);
+// }
 .aboutme {
-  //   border: red 2px solid;
+  // border: red 2px solid;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -47,6 +50,7 @@
 .profile {
   width: 150px;
   height: 150px;
+  // border: red 2px solid;
 }
 
 .description {
@@ -55,35 +59,62 @@
   text-align: center;
   margin-top: 10px;
 }
+.section3 {
+  width: 100vw;
+  height: 450px;
+  // border: red 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section3-title {
+  background-color: #87b2b2;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 0 5px -5px #496e6e;
+  transform: translate(0, -100%);
+}
 
 .section3-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .skills {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  margin: 12px;
 }
 
 .section4 {
-  background-color: grey;
+  background-color: #f5f7f8;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 15px;
 }
 
 .section4-projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
 }
 .project {
-  width: 50px;
-  height: 50px;
+  width: 350px;
+  height: 210px;
+  margin: 10px;
+}
+.project:hover {
+  border: cadetblue solid 2px;
 }
 .contact {
-  border: #87b2b2 2px solid;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -91,18 +122,22 @@
   justify-content: center;
 }
 .form {
-  width: 500px;
-  height: 300px;
-  //   border: #87b2b2 2px solid;
+  width: 450px;
+  height: 340px;
+  // border: #87b2b2 2px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .form--fieldSpace {
-  width: 500px;
+  width: 450px;
   height: 50px;
+  border: 1px solid #ced4da;
+  padding: 5px;
+  border-radius: 5px;
 }
+
 .form--fieldSpace__mailphone {
   display: flex;
   flex-direction: row;
@@ -110,42 +145,29 @@
 }
 
 .form--fieldSpace__phone {
-  width: 240px;
+  width: 212px;
 }
 .form--fieldSpace__mail {
-  width: 240px;
+  width: 212px;
 }
 .form--fieldSpaceComment {
-  width: 500px;
+  width: 450px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .form--button {
   width: 300px;
-  height: 30px;
+  height: 40px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #87b2b2;
+  color: #87b2b2;
 }
-.footer {
-  width: 100vw;
-  height: 250px;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  border: #87b2b2 2px solid;
-}
-.footer-links {
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.links {
-  width: 40px;
-  height: 40px;
-}
-.copy {
-  font-size: 14px;
-  margin-top: 15px;
+.form--button:hover {
+  background-color: #87b2b2;
+  color: white;
 }
