@@ -30,19 +30,28 @@
 
 .section2 {
   width: 100vw;
-  height: 500px;
+  height: 600px;
   background-color: #87b2b2;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .guitar1 {
   width: 512px;
   height: 150px;
-  transform: translate(0, -90%); }
-  @media all and (min-width: 300px) {
+  transform: translate(0, -120%);
+  margin-top: 55px; }
+  @media all and (min-width: 768px) {
     .guitar1 {
       width: 100vw;
-      height: 150px; } }
+      height: 150px;
+      transform: translate(0, -160%); } }
+  @media all and (min-width: 1200px) {
+    .guitar1 {
+      width: 100vw;
+      height: 250px;
+      transform: translate(0, -110%); } }
 
 .aboutme {
   display: flex;
@@ -52,11 +61,13 @@
   transform: translate(0, -20%); }
   @media all and (min-width: 768px) {
     .aboutme {
-      flex-direction: row; } }
+      flex-direction: row;
+      transform: translate(0, -100px); } }
 
 .profile {
   width: 150px;
-  height: 150px; }
+  height: 150px;
+  margin-bottom: 15px; }
   @media all and (min-width: 768px) {
     .profile {
       width: 300px;
@@ -64,9 +75,10 @@
 
 .description {
   padding: 10px;
+  width: 370px;
   text-align: justify;
   margin: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #454545;
   font-size: 14px; }
   @media all and (min-width: 768px) {
@@ -75,11 +87,11 @@
 
 .section3 {
   width: 100vw;
-  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: center;
+  font-family: "Roboto Slab", serif; }
 
 .section3-title {
   background-color: #87b2b2;
@@ -88,13 +100,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -5px 0 5px -5px #496e6e;
-  transform: translate(0, -100%); }
+  transform: translate(0, -60%);
+  font-family: "Montserrat", sans-serif; }
 
 .section3-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-bottom: 60px; }
+  @media all and (min-width: 768px) {
+    .section3-skills {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr; } }
+  @media all and (min-width: 1200px) {
+    .section3-skills {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 1fr; } }
 
 .skills {
   width: 70px;
@@ -109,61 +130,116 @@
   align-items: center;
   padding: 15px; }
 
+.section4-text {
+  background-color: #f5f7f8;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -100%);
+  font-family: "Montserrat", sans-serif;
+  color: #393636; }
+
 .section4-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px; }
+  margin: 30px; }
+  @media all and (min-width: 1200px) {
+    .section4-projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-bottom: 60px; } }
 
 .project {
   width: 350px;
   height: 210px;
   margin: 10px; }
+  @media all and (min-width: 768px) {
+    .project {
+      width: 450px;
+      height: 300px;
+      margin: 15px; } }
+  @media all and (min-width: 1200px) {
+    .project {
+      margin: 30px; } }
 
 .project:hover {
-  border: cadetblue solid 2px; }
+  transform: scale(1.1);
+  opacity: 0.6; }
 
 .contact {
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 60px; }
+  @media all and (min-width: 1200px) {
+    .contact {
+      margin-bottom: 100px; } }
+
+.contact-title {
+  background-color: #f5f7f8;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -200%);
+  font-family: "Montserrat", sans-serif;
+  color: #393636; }
 
 .form {
   width: 450px;
-  height: 340px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: center;
+  align-items: center; }
 
 .form--fieldSpace {
   width: 450px;
   height: 50px;
   border: 1px solid #ced4da;
   padding: 5px;
+  margin: 10px;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif; }
 
 .form--fieldSpace__mailphone {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  @media all and (min-width: 768px) {
+    .form--fieldSpace__mailphone {
+      flex-direction: column; } }
 
 .form--fieldSpace__phone {
-  width: 212px;
+  width: 225px;
   font-family: "Montserrat", sans-serif; }
+  @media all and (min-width: 768px) {
+    .form--fieldSpace__phone {
+      width: 450px;
+      height: 50px; } }
 
 .form--fieldSpace__mail {
-  width: 212px;
+  width: 210px;
   font-family: "Montserrat", sans-serif; }
+  @media all and (min-width: 768px) {
+    .form--fieldSpace__mail {
+      width: 450px;
+      height: 50px;
+      margin-bottom: 10px; } }
 
 .form--fieldSpaceComment {
   width: 450px;
   border: 1px solid #ced4da;
   padding: 10px;
   border-radius: 5px;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px; }
 
 .form--button {
   width: 300px;
@@ -174,7 +250,7 @@
   border-radius: 5px;
   border: 1px solid #87b2b2;
   color: #87b2b2;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Roboto Slab", serif; }
 
 .form--button:hover {
   background-color: #87b2b2;
@@ -202,9 +278,9 @@
 
 .item {
   text-decoration: none;
-  color: #454545;
+  color: #393636;
   margin: 8px;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Roboto Slab", serif; }
 
 .item:hover {
   color: #87b2b2; }
@@ -217,6 +293,9 @@
   justify-content: center;
   align-items: center;
   background-color: #87b2b2; }
+  @media all and (min-width: 1200px) {
+    .footer {
+      height: 300px; } }
 
 .footer-links {
   width: 200px;
@@ -229,15 +308,31 @@
   width: 40px;
   height: 40px; }
 
+.links:hover {
+  transform: scale(1.2); }
+
 .copy {
   font-size: 14px;
   order: 2;
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif; }
+  @media all and (min-width: 1200px) {
+    .copy {
+      margin-bottom: 80px; } }
 
 .guitar-footer {
   width: 512px;
   height: 150px;
   transform: translate(0, -20%); }
+  @media all and (min-width: 768px) {
+    .guitar-footer {
+      width: 100vw;
+      height: 150px;
+      transform: translate(0, -20%); } }
+  @media all and (min-width: 1200px) {
+    .guitar-footer {
+      width: 100vw;
+      height: 250px;
+      transform: translate(0, -8%); } }
 
 /*# sourceMappingURL=main.css.map */

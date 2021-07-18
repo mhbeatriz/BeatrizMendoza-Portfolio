@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
   <title>Beatriz Mendoza</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,42 +16,44 @@
 
 <body>
 
-  <header class="header" id="home">
+  <header class="header">
     <nav class="nav">
       <li><a class="item" href="#home">Home</a></li>
-      <li><a class="item" href="#section1">Sobre mí</a></li>
+      <li><a class="item" href="#aboutme">Sobre mí</a></li>
       <li><a class="item" href="#skills">Herramientas</a></li>
       <li><a class="item" href="#proyects">Proyectos</a></li>
       <li><a class="item" href="#contact">Contacto</a></li>
     </nav>
   </header>
   <main class="main">
-    <section class="section1" id="section1">
-
+    <section class="section1" id="home">
       <h1 class="section1-title">Beatriz Mendoza</h1>
       <p class="section1-subtitle">Front-End Developer</p>
 
     </section>
 
-    <section class="section2">
+    <section class="section2" id="aboutme">
       <img class="guitar1" src="/assets/images/descarga.png" alt="guitar">
       <div class="aboutme">
-        <p class="description">Especializada en Marketing Social y con un MBA, elegí mi formación profesional porque
-          creo que la empresa puede ser algo más que un balance de beneficios y pérdidas. <br> Mi experiencia trabajando
-          en
-          distintas empresas me ha convertido en una persona polivalente, con gran capacidad de adaptación y facilidad
-          de aprendizaje. <br>
-          Soy una persona empática, amante del orden y de la organización, y del diseño gráfico. <br>
-          Descubrí con sorpresa una nueva pasión que combina mis capacidades analíticas y creativas: la
-          <strong>programación</strong>, y
-          desde entonces no hay quién me separe del ordenador.</p>
+        <div class="description">
+          <p>Especializada en Marketing Social y con un MBA, elegí mi formación profesional porque creo que la empresa
+            puede ser algo más que un balance de beneficios y pérdidas.</p> <br>
+          <p>Mi experiencia trabajando en distintas empresas me ha convertido en una persona polivalente, con gran
+            capacidad de adaptación y facilidad de aprendizaje.</p> <br>
+          <p>Soy una persona empática, amante del orden y de la <strong>organización</strong> , y del <strong>diseño
+              gráfico. </strong></p> <br>
+          <p> Descubrí con sorpresa una nueva pasión que combina mis capacidades analíticas y creativas: la
+            <strong>programación</strong>, y
+            desde entonces no hay quién me separe del ordenador.
+          </p>
+        </div>
         <img class="profile" src="/assets/images/profile.png">
       </div>
       <!-- <img class="guitar2" src="/assets/images/guitar giro.png" alt="guitar"> -->
     </section>
 
     <section class="section3" id="skills">
-      <!-- <h3 class="section3-title">Herramientas</h3> -->
+      <h3 class="section3-title">Herramientas</h3>
       <div class="section3-skills">
         <img class="skills" src="./assets/images/html.png" />
         <img class="skills" src="./assets/images/css.png" />
@@ -68,7 +71,7 @@
     </section>
 
     <section class="section4" id="proyects">
-      <!-- <h3 class="section4-text">Proyectos</h3> -->
+      <h3 class="section4-text">Proyectos</h3>
       <div class="section4-projects">
         <a target="blank" href="https://mhbeatriz.github.io/Ecocards/">
           <img class="project" src="./assets/images/ecode.png" alt="ecode"></a>
@@ -85,7 +88,7 @@
 
 
     <section class="contact" id="contact">
-      <!-- <h3 class="contact-title">Contacto</h3> -->
+      <h3 class="contact-title">Contacto</h3>
       <form class="form" action="https://formspree.io/f/meqveeoq" method="post">
 
         <input class="form--fieldSpace" placeholder="Nombre completo" name="name" type="text" id="fullName" required />
