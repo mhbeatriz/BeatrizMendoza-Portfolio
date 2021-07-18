@@ -1,68 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+  <title>Beatriz Mendoza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+  <header class="header">
+    <nav class="nav">
+      <li><a class="item" href="#home">Home</a></li>
+      <li><a class="item" href="#aboutme">Sobre mí</a></li>
+      <li><a class="item" href="#skills">Herramientas</a></li>
+      <li><a class="item" href="#proyects">Proyectos</a></li>
+      <li><a class="item" href="#contact">Contacto</a></li>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section1" id="home">
+      <h1 class="section1-title">Beatriz Mendoza</h1>
+      <p class="section1-subtitle">Front-End Developer</p>
 
-          </li>
-        </ul>
-      </main>
+    </section>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <section class="section2" id="aboutme">
+      <img class="guitar1" src="/assets/images/descarga.png" alt="guitar">
+      <div class="aboutme">
+        <div class="description">
+          <p>Especializada en Marketing Social y con un MBA, elegí mi formación profesional porque creo que la empresa
+            puede ser algo más que un balance de beneficios y pérdidas.</p> <br>
+          <p>Mi experiencia trabajando en distintas empresas me ha convertido en una persona polivalente, con gran
+            capacidad de adaptación y facilidad de aprendizaje.</p> <br>
+          <p>Soy una persona empática, amante del orden y de la <strong>organización</strong> , y del <strong>diseño
+              gráfico. </strong></p> <br>
+          <p> Descubrí con sorpresa una nueva pasión que combina mis capacidades analíticas y creativas: la
+            <strong>programación</strong>, y
+            desde entonces no hay quién me separe del ordenador.
+          </p>
+        </div>
+        <img class="profile" src="/assets/images/profile.png">
+      </div>
+      <!-- <img class="guitar2" src="/assets/images/guitar giro.png" alt="guitar"> -->
+    </section>
 
-        </small>
-      </footer>
+    <section class="section3" id="skills">
+      <h3 class="section3-title">Herramientas</h3>
+      <div class="section3-skills">
+        <img class="skills" src="./assets/images/html.png" />
+        <img class="skills" src="./assets/images/css.png" />
+        <img class="skills" src="./assets/images/gulp.png" />
+        <img class="skills" src="./assets/images/git.png" />
+        <img class="skills" src="./assets/images/react.png" />
+        <img class="skills" src="./assets/images/js.png" />
+        <img class="skills" src="./assets/images/nodejs.png" />
+        <img class="skills" src="./assets/images/sass.png" />
+        <img class="skills" src="./assets/images/vscode.png" />
+        <img class="skills" src="./assets/images/slack.png" />
+        <img class="skills" src="./assets/images/illustrator.png" />
+        <img class="skills" src="./assets/images/photoshop.png" />
+      </div>
+    </section>
 
+    <section class="section4" id="proyects">
+      <h3 class="section4-text">Proyectos</h3>
+      <div class="section4-projects">
+        <a target="blank" href="https://mhbeatriz.github.io/Ecocards/">
+          <img class="project" src="./assets/images/ecode.png" alt="ecode"></a>
+        <a target="blank" href="https://mhbeatriz.github.io/Rick-and-Morty-buscador/#/">
+          <img class="project" src="./assets/images/rickandmorty.png" alt="rickandmorty"></a>
+        <a target="blank" href="https://mhbeatriz.github.io/404/">
+          <img class="project" src="./assets/images/404.png" alt="404"></a>
+        <a target="blank" href="https://mhbeatriz.github.io/Adivina-el-numero/">
+          <img class="project" src="./assets/images/adivinaelnumero.png" alt="adivinaelnumero"></a>
+        <a target="blank" href="https://mhbeatriz.github.io/El-Alma-del-Rock/">
+          <img class="project" src="./assets/images/elalmadelrock.png" alt="elalmadelrock"></a>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h3 class="contact-title">Contacto</h3>
+      <form class="form" action="https://formspree.io/f/meqveeoq" method="post">
+
+        <input class="form--fieldSpace" placeholder="Nombre completo" name="name" type="text" id="fullName" required />
+
+        <div class="form--fieldSpace__mailphone">
+          <input class="form--fieldSpace form--fieldSpace__mail" placeholder="Correo electrónico" name="email"
+            type="email" id="email" required />
+          <input class="form--fieldSpace form--fieldSpace__phone" placeholder="Teléfono" id="phone" name="tel"
+            type="tel" />
+        </div>
+
+        <textarea class="form--fieldSpaceComment" placeholder="Escribe tu mensaje aquí" name="mesage" id="message"
+          rows="8" cols="80" required></textarea>
+        <label for="button"></label>
+        <input class="form--button" type="submit" id="button" name="send" value="Enviar" />
+      </form>
+    </section>
+    <footer class="footer">
+      <img class="guitar-footer" src="./assets/images/footer.png" />
+      <small class="copy">&copy; 2021 BeatrizMendoza</small>
+      <div class="footer-links">
+        <a target="blank" href="https://www.linkedin.com/in/beatriz-mendoza-huertas/"><img class="links"
+            src="/assets/images/linkedin.png"></a>
+        <a target="blank" href="https://twitter.com/bitrirock"><img class="links" src="/assets/images/twitter.png"></a>
+        <a target="blank" href="https://www.youtube.com/channel/UCbQcGbodPKLX5bvpCXutAFA"><img class="links"
+            src="/assets/images/youtube.png"></a>
+        <a target="blank" href="https://github.com/mhbeatriz"><img class="links" src="/assets/images/github.png"></a>
+      </div>
+    </footer>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
